@@ -40,22 +40,58 @@ header{
     margin-right: 35;
 }
 
-#topbar h2{
-    color: white;
-    font-size: 12px;
-    position: relative;
-    left: 220px;
-    top: 15px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    line-height: 1em;
-}
-
 nav#main{
     height: 60px;
     background: white;
     border-radius: 4px;
     position: relative;
+}
+#main-menu ul
+{
+	position: absolute;
+    top: 65px;
+	width: 200px;
+	padding: 0;
+	display: none;
+}
+#menu li
+{
+	float: left;
+	margin-right: 3px;
+	position: relative;
+}
+
+#main-menu ul li
+{
+	float: none;
+	margin: 10px;
+	padding: 0;
+	line-height: 15px; 
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    right: 100px;
+}
+
+#main-menu, #main-menu ul
+{
+	list-style: none;
+    height: 360px;
+    display: none;
+	background-color: white;
+    
+}
+
+
+#main-menu li:hover
+{
+	background-color: white;
+
+}
+#main-menu li:hover ul
+{
+	display: block;
+ 
 }
 
 #logo{
@@ -83,7 +119,7 @@ nav#main{
     display:flex;
     align-items: center;
     height: 60px;
-    list-style-type: none;
+    list-style: none;
     justify-content: space-between;
 }
 
@@ -260,7 +296,7 @@ h2{
     list-style: none;
 }
 
-li::before{
+.column2 li::before{
     position: absolute;
     content: '>';
     line-height: 14px;
