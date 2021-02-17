@@ -26,6 +26,7 @@ body{
 }
 
 header{
+    margin-bottom: -10px;
     background: url(./images/bg.png) bottom center no-repeat;
     height: 750px;
     background-size: cover;
@@ -162,6 +163,141 @@ background-color: #BF0A30;
     left: 240px;
     width: 280px;
 }
+/*first paragraph*/
+
+.container1{
+    display:block;
+    background: #f8f8f8;
+    margin: 0 auto;
+    font-family: 'SourceSansPro',serif;
+    width: 100%;
+}
+
+.layout{
+    height: 750px;
+    background: url(./images/bg2.png) center no-repeat;
+}
+
+.inner-con{
+    max-width: 1360px;
+    height: 750px;
+    margin: 0 auto;
+}
+
+.top-con{
+    padding-top: 40px;
+}
+.top-con img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.body-con{
+    margin: 0 auto;
+    display: table;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+.inner-con h2{
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: #BF0A30;
+}
+h2{
+    letter-spacing: 0  ;
+}
+.column1{
+    display: table-cell;
+    width: 465px;
+    margin-bottom: 34px;
+    padding-right: 60px;
+    padding-left: 190px;
+    vertical-align: top;
+    text-align: left;
+
+}
+.column2{
+    display: table-cell;
+    width: 470px;
+    margin: 0 34px;
+    vertical-align: top;
+    text-align: left;
+
+}
+
+.column1 h3{
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #002868;
+    padding-bottom: 20px;
+    padding-top: 0px;
+}
+.column2 h3{
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #002868;
+    padding-bottom: 20px;
+    padding-top: 0px;
+}
+
+.column1 p{
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+.column2 ul{
+    padding:20px 0;
+    text-align: left;
+    list-style: none;
+}
+
+li::before{
+    position: absolute;
+    content: '>';
+    line-height: 14px;
+    color: #002868;
+    left: 0;
+}
+
+.column2 li{
+    position: relative;
+    padding-left: 14px;
+    line-height: 20px;
+    padding-bottom: 12px;
+}
+h4{
+    text-align: center;
+    color:#BF0A30;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+.date{
+    color: #002868;
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+    margin-top: 10px;
+}
+.place{
+    color: #002868;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
 
 /* second paragraph */
 .container2{
