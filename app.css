@@ -37,34 +37,41 @@ header{
     height: 750px;
     background-size: cover;
 }
+
+aside{
+    display: none;
+}
+#myInput{
+    display: none;
+}
+
+.topbar{
+    width: 100%;
+}
 .header-above{
     display: flex;
-    padding: 10px 0;
-    box-sizing: border-box;
-    height: 70px;
-    padding-left: 245px; 
+    position: absolute;
+    width: 100%;
+
 }
 
 .scontainer{
+    width: 100%;
     display: block;
     height: 26px;
-    width: 100%;
-    max-width: none;
+    
 }
 
 .slist{
+    width:100%;
     display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
+    justify-content:center;
+}
+.time-wrap{
+    padding-right: 250px;
 }
 
-.time-wrap{
-    align-self: flex-end;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    position: relative;
-}
+
 .name1{
     display: block;
     padding-left: 25px;
@@ -75,69 +82,40 @@ header{
     margin-bottom: 2px;
 }
 
-.econtainer{
+.topbar{
     display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
+    position: absolute;
     width: 100%;
-    max-width: none;
+    height: 40px;
+    top: 45px;
 }
 
-.log-icons{
-    display: flex;
-    flex-direction: column;
-    padding-top: 13px;
-    margin-right: 5px;
-}
-.login{
-    padding-top: 15px;
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-}
-.login a{
-    color:white;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
+
+
+.econtainer{
+    display: none;
 }
 
-.flag-icon{
-    padding-top: 15px;
-    margin-left: 40px;
-}
-.end-icon{
-    margin-left: 5px;
-    margin-right: 37px;
-    padding-top: 16px;
+ul#ul1{
+    display: none;
 }
 
-#topbar{
-    height: 70px;
-    box-sizing: border-box;
-    display: block;
-    margin-left: 35;
-    margin-right: 35;
-}
+/*nav section*/
 
 nav#main{
-    height: 60px;
-    background: white;
-    border-radius: 4px;
     position: relative;
+
 }
 
 #logo{
-    position: absolute;
-    display: block;
-    box-shadow: 0 0 0 10px #AB0427;
-    border: 5px solid white;
+    display: flex;
+    margin: 0 auto;
     border-radius: 100%;
-    left: 50px;
-    top: 50%;
-    transform: translateY(-50%);
-    
-    
+    padding-top: 10px;
+
+}
+li.dropdown{
+    margin-right: 20px;
 }
 
 
@@ -148,26 +126,14 @@ nav#main{
 
 .container{
     max-width: 1360px;
-    margin: 0 auto;
+    margin:0 auto;
 }
 
 
-
-ul#ul1 {
-    margin: 0;
-    padding: 0 40px 0 300px;
-    display:flex;
-    align-items: center;
-    height: 60px;
-    list-style: none;
-    justify-content: space-between;
-    position: relative;
-
-}
 
 ul a {
     color: #002868;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -180,9 +146,6 @@ li a:hover, .dropdown:hover .dropbtn {
     color:#BF0A30;
 }
   
-li.dropdown {
-    display: inline-block;
-}
   
 .dropdown-content {
     top: 55px;
@@ -224,7 +187,7 @@ li.dropdown {
     background-size: 100% 100%;
     width: 400px;
     height: 400px;
-    margin: 70px auto 0;
+    margin: 30px auto 0;
     border: 6px solid white;
     border-radius: 50%;
     box-shadow: 0 0 40px rgba(0,0,0,0.25);
@@ -288,13 +251,11 @@ background-color: #BF0A30;
 }
 
 .slogan{
-    position: absolute;
-    display: block;
-    bottom: 30px;
-    top: 80px;
-    left: 240px;
-    width: 280px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
+
 /*first paragraph*/
 
 .container1{
@@ -306,16 +267,22 @@ background-color: #BF0A30;
 }
 
 .layout{
-    height: 750px;
-    background: url(./images/bg2.png) center no-repeat;
+    height: 1080px;
+    
 }
 
 .inner-con{
     max-width: 1360px;
-    height: 650px;
     margin: 0 auto;
 }
 
+.allcolumns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
 .top-con{
     padding-top: 40px;
 }
@@ -343,14 +310,15 @@ background-color: #BF0A30;
 h2{
     letter-spacing: 0  ;
 }
+#count{
+    margin-bottom: 20px;
+}
 .column1{
     display: table-cell;
     width: 465px;
-    margin-bottom: 34px;
-    padding-right: 60px;
-    padding-left: 190px;
     vertical-align: top;
     text-align: left;
+    margin: 0 34px;
 
 }
 .column2{
@@ -377,7 +345,7 @@ h2{
     line-height: 20px;
     font-weight: bold;
     color: #002868;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     padding-top: 0px;
 }
 
@@ -387,9 +355,12 @@ h2{
 }
 
 .column2 ul{
-    padding:20px 0;
+    padding-top: 0;
+    padding-bottom: 10px;
+    padding-left: 0;
     text-align: left;
     list-style: none;
+    margin: 0;
 }
 
 .column2 li::before{
@@ -555,12 +526,15 @@ h2{
     max-width: 1420px;
     margin: 0px auto; 
     width: 100%;
+    height: 650px;
+    background-color: white;
+    
 }
 
 #third{
     position: relative;
     width: 100%;
-    height: 545px;
+    height: 400px;
     background: white;
     font-family: 'SourceSansPro',serif;
 }
@@ -573,7 +547,8 @@ h2{
     line-height: 15px;
     letter-spacing: 2px;
     color: #002868;
-    margin-top: 62px;
+    padding-top: 64px;
+    margin: 0 auto;
     font-family: 'SourceSansPro',serif;
 
 }
@@ -591,7 +566,6 @@ h2{
 }
 .divider2{
 	position: relative;
-    margin-top: 25px;
     margin-bottom: 25px;
 	height: 1px;
     width: 740px;
@@ -601,8 +575,8 @@ h2{
 form{
     position: relative;
     display: block;
-    width: 680px;
-    left: 400px;
+    width: 300px;
+    margin: auto;
 }
   /* Style the form icons */
 
@@ -616,14 +590,14 @@ form{
       margin-bottom: 5px;
   }
 input.field1 { 
-    width: 619px;
+    width: 280px;
     height: 45px;
     padding: 10px;
 
 } 
 input.field2 { 
 
-    width: 619px;
+    width: 280px;
     height: 45px;
     padding: 10px; 
     padding-left: 45px;
@@ -637,13 +611,13 @@ input.field2 {
 
 input.field3 { 
    
-    width: 619px;
+    width: 280px;
     height: 45px;
     padding: 10px; 
     padding-left: 45px;
 } 
 input.field4 {  
-    width: 619px;
+    width: 280px;
     height: 120px;
     padding: 10px; 
 
@@ -657,8 +631,9 @@ input.field4 {
 }
   
   /*submit button */
-  #third a {
-    position: relative;
+
+
+  #send {
     border-radius: 4px;
     border: 1px solid white;
     font-size: 14px;
@@ -672,15 +647,18 @@ input.field4 {
     text-decoration: none;
     background:#BF0A30;
     position: relative;
-    left: 780px;
   }
   
-  #third a:hover {
+  #send:hover {
     background-color: #002868;
     color: white;
   }
 
-
+  .botcon3{
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    }
 
 /* footer */
 
@@ -694,8 +672,7 @@ input.field4 {
     position: relative;
     box-sizing: border-box;
     display: block;
-    height: 440px;
-    width: 1360px;  
+    height: 630px; 
     background-size: cover;
     text-align: center; 
     margin: 0px auto;
@@ -705,7 +682,7 @@ input.field4 {
 .go-top{
     position: absolute;
     right: 51px;
-    top: -23px;
+    top: 550px;
     bottom: auto;
 }
 
@@ -727,10 +704,11 @@ img#mask{
 }
 
 #logo2{
-    margin-top: 30px;
+        margin-top: 30px;
         display: inline-block;
         border: 5px solid #fff;
         border-radius: 50%;
+        width: 140px;
 }
 
 #logo3{
@@ -739,20 +717,23 @@ img#mask{
 
 nav#social{
     display: block;
-    padding-left: 520px;
-    padding-right: 520px;
-    margin-top: 25px;
-    
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
 }
+
+#lif{
+    padding: 10px 0;
+}
+
 
 #media{
     display:flex;
-    align-items: center;
     list-style-type: none;
     justify-content:space-between;
-    text-align: center;
-    padding-inline-start: 0;
-    
+    padding: 0;
+    margin: 25px 10px 0 10px;
 }
 
 #bicons {
@@ -774,15 +755,14 @@ nav#botnav{
     display: block;
     padding-left: 90px;
     padding-right: 135px;
-    margin-top: 30px;
     
 }
 
 #bottom-menu{
-    display:flex;
     align-items: center;
     list-style-type: none;
     justify-content: space-between;
+    margin-top: 0;
 }
 #bottom-menu a{
     color: white;
@@ -804,3 +784,458 @@ nav#botnav{
     margin-bottom: 10px;
 }
 
+
+@media (max-width: 959px) {
+
+    aside {
+        display: block;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        z-index: 1;
+    }
+    .sideways-content{      
+        position: absolute;
+        display: block;
+        width: 300px;
+        right: -300px;
+        height: 100%;
+        background-color: #f8f8f8;
+        transition: .5s ease;
+        z-index: 6;
+        bottom: 0px;
+        top: 0;
+        
+    }
+
+    .box-1{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align:start;
+    }
+
+    #inbox{
+        padding:10px;
+        font-weight: bold;
+    }
+    #inbox a{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    ul li:hover .sideways-content{  
+        right: -20px;
+        
+    }
+
+    #comeback{
+        font-size: 14px;
+        color: #002868;
+    }
+
+    
+    #myInput
+    {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      cursor: pointer;
+      opacity: 0;
+      z-index: 2; 
+    }
+
+    .content {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        left: 0;
+        z-index: 2;
+        transition: transform .5s ease-in-out;
+      }
+
+
+    label {
+        display: inline-block;
+        padding: 7px 10px;
+        background-color: transparent;
+        cursor: pointer;
+        margin: 10px;
+        z-index: 3;
+        position: absolute;
+        right: 0;
+        transition: 0.5s ease-in-out;
+    }
+    .bar
+    {
+        display: block;
+        background-color: white;
+        width: 25px;
+        height: 3px;
+        border-radius: 5px;
+        margin: 5px auto;
+        transition: background-color .5s ease-in, transform .5s ease-in, width .5s ease-in;
+    }
+
+
+    input[type="checkbox"]:checked ~ label .bar {
+        background-color:#002868;
+     }
+    input[type="checkbox"]:checked ~ label .top
+    {
+      transform: translateY(0px) rotateZ(45deg);
+    }
+    
+    input[type="checkbox"]:checked ~ label .middle
+    {
+      width: 0;
+    }
+   
+    input[type="checkbox"]:checked ~ label .bottom
+    {
+      transform: translateY(-15px) rotateZ(-45deg);
+    
+    }
+
+    input[type="checkbox"]:checked ~ .content {
+        transform: translateX(-300px);
+        overflow: hidden; 
+    }
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked ~ label
+    {
+      right: 240px;
+    }
+
+    .asideList
+    {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+        border-top: 2px solid rgba(255, 255, 255, .7);
+    }
+    
+    .asideAnchor
+    {
+      padding: 10px 0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .asideList li{
+        padding: 10px;
+    }
+    
+
+    .a-navbar{
+        
+        top: 0;
+        bottom: auto;
+    }
+    .b-navbar{
+        display: flex;
+        position: relative;
+        height: 45px;
+        background-color: #F8F8F8;
+    }
+
+    .flag-icon{
+        position: absolute;
+        right:30px;
+        top:12px;
+    }
+
+    .end-icon{
+        position: absolute;
+        right: 11px;
+        top: 18px;
+    }
+    
+    .c-navbar{
+        top: 0;
+        bottom: auto;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-color: #EEEEEE;
+    }
+    .d-navbar{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        height: 45px;
+        background-color: white;
+    }
+    .e-navbar{
+        display: flex;
+        position: fixed;
+        justify-content:flex-start;
+        height: 45px;
+        background-color: #f8f8f8;
+        position: relative;
+        z-index: 5;
+    }
+    .log-icons{
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    .log-icons2{
+        padding: 10px 2px 10px 5px;
+    }
+    .login{
+        padding-top: 13px;
+        font-size: 14px;
+        font-weight: bold;
+        color:#002868;
+    }
+    .login a{
+        color:#002868;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    button{
+        width: 250;
+        text-align: left;
+        background-color: transparent;
+        border: none;
+    }
+
+    img#right{
+        float: right;
+    }
+
+}
+
+
+@media (min-width: 960px){
+    .container{
+        max-width: 920px;
+    }
+
+    /* topbar */
+    .econtainer{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        width: 100%;
+        max-width: none;
+    }
+
+
+    .header-above{
+        display: flex;
+        position: relative;
+        padding: 10px 0;
+        box-sizing: border-box;
+        height: 70px;
+        padding-left: 245px; 
+    }
+
+    .slist{
+        justify-content: flex-start;
+    }
+    
+    .log-icons{
+        display: flex;
+        flex-direction: column;
+        padding-top: 13px;
+        margin-right: 5px;
+    }
+    .login{
+        padding-top: 15px;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+    }
+    .login a{
+        color:white;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .flag-icon{
+        padding-top: 15px;
+        margin-left: 40px;
+    }
+    .end-icon{
+        margin-left: 5px;
+        margin-right: 37px;
+        padding-top: 16px;
+    }
+    .topbar{
+        position: relative;
+        height: 70px;
+        box-sizing: border-box;
+        display: block;
+        top: 0;
+        max-width: none;
+    }
+    
+
+     /* navbar */
+     ul#ul1{
+        padding-left: 260px;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        list-style: none;
+        justify-content: space-between;
+        position: relative;
+        margin-right: 5px;
+    }
+    ul a {
+
+        font-size: 12px;
+    }
+    ul#li{
+        margin-right: 10px;
+    }
+
+    input#check{
+        display: none;
+    }
+
+
+    nav#main{
+        background: white;
+        height: 60px;
+        border-radius: 4px;
+    }
+
+    #logo{
+        position: absolute;
+        box-shadow: 0 0 0 10px #AB0427;
+        border: 5px solid white;
+        left: 50px;
+        top: 50%;
+        transform: translateY(-50%);   
+        padding-top: 0; 
+    }
+    .slogan{
+       position: absolute;
+       display: block;
+        bottom: 30px;
+        top: 80px;
+        left: 240px;
+        margin-top: 0;
+    }
+    #slogann{
+        width: 200px;
+    }
+
+    #featured{
+
+        margin: 70px auto 0;
+    }
+    .allcolumns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .layout{
+        height: 750px;
+        background: url(./images/bg2.png) center no-repeat;
+    }
+    .botcon3{
+        padding-right: 400px;
+        text-align: right;
+    }
+    /* container 3 */
+    form{
+        width: 680px;
+    }
+
+    input.field4 {  
+        width: 450px;
+    } 
+    input.field3 {  
+        width: 450px;
+    } 
+    input.field2 {  
+        width: 450px;
+    } 
+    input.field1 {  
+        width: 450px;
+    } 
+    /* footer */
+    .footer-inner {
+        height: 440px;
+    }
+    nav#social{
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+    #media{
+        padding-left: 15px;
+    }
+    #bottom-menu{
+        display:flex;
+    }
+    .go-top{
+        top: -23px;
+    }
+    #logo2{
+        width: 160px
+    }
+
+    .time-wrap{
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 1280px){
+    .container{
+        max-width: 1360px;
+    }
+
+    ul a {
+
+        font-size: 14px;
+    }
+    ul#ul1{
+        margin: 0 auto;
+        padding: 0 40px 0 300px;
+    }
+    li.dropdown{
+        margin-right: 0;
+    }
+    #slogann{
+        width: 260px;
+    }
+    /* footer */
+
+    input.field4 {  
+        width: 619px;
+    } 
+    input.field3 {  
+        width: 619px;
+    } 
+    input.field2 {  
+        width: 619px;
+    } 
+    input.field1 {  
+        width: 619px;
+    } 
+
+    nav#social{
+        margin-left: 520px;
+        margin-right: 520px;
+    }
+    #logo2{
+        width: 180px
+    }
+
+}
